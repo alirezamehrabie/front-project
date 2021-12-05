@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Shabnam-Bold;
+  src: url(fonts/Shabnam\ Bold.ttf);
+}
+
+@font-face {
+  font-family: Shabnam-light;
+  src: url(fonts/Shabnam\ Light.ttf);
+}
+
+@font-face {
+  font-family: iran-light;
+  src: url('fonts/IRANSansWeb\(FaNum\)_Light.ttf');
+}
+
+@font-face
+{
+  font-family: iran-normal;
+  src: url('fonts/IRANSansWeb\(FaNum\)_Medium.ttf');
+}
+
+@font-face
+{
+  font-family: iran-bold;
+  src: url('fonts/IRANSansWeb\(FaNum\)_Bold.ttf');
+}
+
+@font-face
+{
+  font-family: iran-black;
+  src: url('fonts/IRANSansWeb\(FaNum\)_Black.ttf');
+}
+
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+a
+{
+  text-decoration: none;
+  color: #000;
+}
+
+:lang(fa)
+{
+  direction: rtl;
+
+}
+
+:lang(en)
+{
+  direction: ltr;
+  text-align: left;
+}
+
+:root
+{
+  background-color: #444 !important;
+}
+
+.container
+{
+  width: 100%;
+  height: auto;
+  background-image:url(assets/images/upload/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.body-titr
+{
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  /* background-color: rgba(255, 255, 255, .3); */
+}
+
+.body-titr h1
+{
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding: 20px 10px;
+  margin: 0 auto;
+  border-radius: 4rem;
+  background-color: rgba(0, 0, 0, .6);
+  font-family: iran-bold;
+  color: #ffffff;
+  font-size: 1.8em;
+}
+
+.container-product
+{
+  padding: 50px;
+  background-color: rgba(255, 255, 255, .58);
+  margin: 10px;
+  border-radius: 1em;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 8px;
+  background-color: transparent;
+}
+
+.card
+{
+  /* display: inline-block;
+  vertical-align: top; */
+  background-color: #ffffff;
+  box-shadow: 0px 6px 4px 0px #484848;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 15px 15px;
+}
+
+.card img
+{
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 4px 1px #cccccc;
+  transition: transform .5s;
+}
+.card img:hover
+{
+  cursor: pointer;
+  /* box-shadow: 0px 0px 8px 1px #b0b0b0; */
+  transform: scale(1.02);
+}
+
+.card-body
+{
+  padding: 20px;
+  border-top: 1px solid #c4c4c4;
+  margin-top: 20px;
+}
+
+.card-body h2
+{
+  font-family: iran-bold;
+}
+
+.card-body h3
+{
+  font-family: iran-bold;
+  margin-top: 20px;
+  color: #720404;
+}
+
+.card-body p
+{
+  font-family: shabnam-light;
+  margin-top: 20px;
+}
+
+.card-body .btn-buy
+{
+  display: block;
+  width: 60%;
+  margin: 20px auto 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 2rem;
+  font-family: iran-black;
+  background: #004d7d;
+  color: #ffffff;
+  border: none;
+}
+
+.card-body .btn-buy:hover
+{
+  cursor: pointer;
+}
+
+/* Slider Swiper */
+
+.swiper
+{
+  width: 1000px;
+  height: 780px;
+  border-radius: 1em;
+  box-shadow: 0px 0px 40px 20px #000;
+}
+/

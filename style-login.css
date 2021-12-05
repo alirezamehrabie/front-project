@@ -1,0 +1,230 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+
+
+
+@font-face {
+    font-family: Shabnam-light;
+    src: url(fonts/Shabnam\ Light.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-bold;
+    src: url(fonts/Shabnam\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-normal;
+    src: url(fonts/Shabnam.ttf);
+}
+
+*
+{
+    margin: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login-page
+{
+    width: 350px;
+    height: 450px;
+    background: rgb(235,235,235);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .4s;
+    border-radius: .5em;
+}
+
+.login-page:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.300);
+}
+
+.login-page h1
+{
+    margin-bottom: 8px;
+    font-family: shabnam-normal;
+    word-spacing: -3px;
+    font-size: 2em;
+}
+
+.login-page h3
+{
+    font-family: shabnam-normal;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.login-page form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page form input
+{
+    width: 250px;
+    border-radius: 5px;
+    color: #48059b !important;
+    font-family: shabnam-bold;
+    font-size: 1em;
+    height: 35px;
+    margin: 8px;
+    background: rgb(215,218,214);
+    border: none;
+    padding: 4px 10px 0 10px;
+    outline: none;
+    line-height: 1.5;
+    transition: all .4s;
+}
+
+.login-page form input:focus
+{
+    background: #a464f32b;
+    color: #e2e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: border 0s;
+    border: 2px solid #48059b;
+}
+
+::placeholder
+{
+    color: #706e72;
+    font-size: .8em;
+    font-family: shabnam-bold;
+}
+
+
+button[type="submit"]
+{
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1em;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    border: 2px solid  #48059baa;
+    color: #48059baa ;
+    font-family: shabnam-bold;
+    border-radius: 2em;
+    transition: all .3s;
+   
+    
+}
+
+button[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #48059baa ;
+    color: #e2e2e2;
+}
+
+p
+{
+    font-family: shabnam-light;
+    margin: 5px auto;
+}
+
+
+.icons
+{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.icons div
+{
+    width: 122px;
+    border-radius: .5em;
+    height: 40px;
+    border: 2px solid #3b5998;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    margin: 0 2px;
+    transition: all .4s;
+    cursor: pointer;
+  
+   
+}
+
+.icons div span
+{
+    font-family: shabnam-bold;
+}
+
+
+.icons div:nth-child(2)
+{
+    border: 2px solid #4285f4;
+}
+
+.icons div i
+{
+    color: #3b5998;
+    margin: 8px;
+    transition: all 0.4s;
+}
+
+.icons div i:hover
+{
+    color: #e2e2e2;
+}
+
+.icons div .fa-google
+{
+    color: #4285f4;
+}
+
+
+.icons div:hover:nth-child(1)
+{
+    background: #3b5998;
+    color: #e2e2e2;
+}
+
+
+.icons div:hover:nth-child(2)
+{
+    background: #4285f4;
+    color: #e2e2e2 ;
+}
+
+.icons div:hover i
+{
+    color: #e2e2e2;
+}
+
+

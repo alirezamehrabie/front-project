@@ -1,0 +1,178 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+@font-face {
+    font-family: Shabnam-light;
+    src: url(fonts/Shabnam\ Light.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-bold;
+    src: url(fonts/Shabnam\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-normal;
+    src: url(fonts/Shabnam.ttf);
+}
+
+:root
+{
+    font-size: 15px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    direction: rtl;
+    background: #e8e8e8;
+}
+
+h1 i
+{
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+button i
+{
+    color: #000000 !important;
+    font-size: 1.2em;
+}
+
+#btn-sub:hover  i
+{
+    color: #007848 !important;
+}
+
+.container-product
+{
+    width: 700px;
+    height: 500px;
+    border-radius: 1em;
+    background:#ffffff;
+    margin: 15px auto;
+    padding: 10px;
+
+}
+
+.container-product form
+{
+    width: 98%;
+    height: auto;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 1em;
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.container-product h1
+{
+    font-family: shabnam-bold;
+    width: 98%;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 5px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    border-radius: .5em;
+}
+
+.container-product form div
+{
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.container-product form div input , textarea
+{
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: .3em;
+    font-size: 1em;
+    font-family: shabnam-Bold;
+}
+
+::placeholder
+{
+    font-family: shabnam-light;
+}
+
+.container-product form div input:focus , textarea:focus
+{
+    outline:  2px solid #108ab3;
+}
+
+.container-product form div input[type="file"]
+{
+    color: #fff;
+}
+
+#detalis
+{
+    width: 90%;
+    height: 150px;
+    resize: none;
+    margin-top: 10px;
+}
+
+
+.container-product form div button
+{
+    font-family: shabnam-bold;
+    padding: 8px 20px;
+    border: none;
+    border-radius: .2em;
+}
+
+.container-product form div button *
+{
+    vertical-align: middle;
+}
+
+.container-product form div button:hover
+{
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 0 20px #444;
+}
+
+.container-product form div a
+{
+    color: #fff;
+    text-decoration: none;
+    font-family: shabnam-light;
+    font-size: 1em;
+}
+
+.container-product form div i
+{
+    color: #fff;
+    margin: 0 8px;
+}
+
+img
+{
+  width: 200px;
+  border-radius: 1em;
+}

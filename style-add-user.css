@@ -1,0 +1,176 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+@font-face {
+    font-family: Shabnam-light;
+    src: url(fonts/Shabnam\ Light.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-bold;
+    src: url(fonts/Shabnam\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Shabnam-normal;
+    src: url(fonts/Shabnam.ttf);
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    direction: rtl;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.page-add-user
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    padding: 15px 8px;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 1em;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+ 
+}
+
+.page-add-user h1
+{
+    margin-bottom: 8px;
+    font-size: 1.8em;
+    font-family: Shabnam-Bold;
+    font-weight: 100;
+    color: #00437d;
+}
+
+.page-add-user h3
+{
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: shabnam-normal;
+    font-weight: 100;
+    color: #444;
+}
+
+.page-add-user form
+{
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    background: transparent;
+  
+}
+
+.page-add-user form label
+{
+    display: block;
+    margin: 8px auto 8px auto;
+    width: 95%;
+    font-family: shabnam-light; 
+}
+
+.page-add-user form label span
+{
+    color: #003585cc;
+    margin-right: 2px;
+}
+
+.page-add-user form input , textarea
+{
+    width: 95%;
+    border: 1px solid #ccc;
+    font-family: shabnam-light;
+    font-weight: bold;
+    color: #004085;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto 12px auto;
+    padding: 10px 10px;
+    border-radius: .5em;
+    outline: none;
+    
+}
+
+.page-add-user form textarea
+{
+    resize: none;
+    height: 80px;
+}
+
+.btns
+{
+    width: 95%;
+    height: auto;
+    display: inline-block;
+    background: transparent;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+
+.page-add-user form button
+{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 30px;
+    font-family: shabnam-bold;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    background: #155799;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.page-add-user form button:nth-child(2)
+{
+    background: #8a0202;
+}
+
+.page-add-user form button:nth-child(2):hover
+{
+    background: #690101;
+}
+
+.page-add-user form button:hover
+{
+    cursor: pointer;
+    background: #104274;
+}
+
+.footer
+{
+    width: 100%;
+    height: 80px;
+    background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+                      
