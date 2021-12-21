@@ -1,11 +1,12 @@
 <?php
 
+session_start();
+
 include 'settings.php';
 include 'db.php';
 
 
 $uid = $_GET['id'];
-
 $dbc = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 if(isset($_POST['submit']))
