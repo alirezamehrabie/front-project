@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Shabnam Series*/
+
+@font-face 
+{
+  font-family: shabnam;
+  src: url("Shabnam.ttf");
+}
+
+@font-face 
+{
+  font-family: shabnam-light;
+  src: url("Shabnam Light.ttf");
+}
+
+@font-face 
+{
+  font-family: shabnam-bold;
+  src: url("Shabnam Bold.ttf");
+}
+
+/*Vazir Series*/
+
+@font-face 
+{
+  font-family: vazir;
+  src: url("Vazir.ttf");
+}
+
+@font-face 
+{
+  font-family: vazir-light;
+  src: url("Vazir Light.ttf");
+}
+
+@font-face 
+{
+  font-family: vazir-bold;
+  src: url("Vazir Bold.ttf");
+}
+
+/*IranSans Series*/
+
+@font-face 
+{
+  font-family: iransans;
+  src: url("IRANSansWeb(FaNum).ttf");
+}
+
+@font-face 
+{
+  font-family: iransans-black;
+  src: url("IRANSansWeb(FaNum)_Black.ttf");
+}
+
+@font-face 
+{
+  font-family: iransans-bold;
+  src: url("IRANSansWeb(FaNum)_Bold.ttf");
+}
+
+@font-face 
+{
+  font-family: iransans-medium;
+  src: url("IRANSansWeb(FaNum)_Medium.ttf");
+}
+
+@font-face 
+{
+  font-family: iransans-light;
+  src: url("IRANSansWeb(FaNum)_Light.ttf");
+}
+
+/*Yekan Series*/
+
+@font-face 
+{
+  font-family: yekan-boom;
+  src: url("Yekan Boom.ttf");
+}
+
+@font-face 
+{
+  font-family: yekan-bakh;
+  src: url("Yekan Bakh.ttf");
+}
+
+
+
+
+
+

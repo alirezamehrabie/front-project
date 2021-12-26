@@ -8,34 +8,23 @@ session_start();
 	include 'functions.php';
 
 
-if( ! Authentication :: check())
+if(!Authentication :: check())
 {
 	echo 'اجازه دسترسی به پنل را ندارید';
 	exit;
 }
 
-
-if(isset($_POST['submit']))
-{
-
-	
-	
 	$dbc = new db($dbHost, $dbUser , $dbPass, $dbName);
-	$sql = "SELECT * FROM user WHERE username_user = ?";
-	$result = $dbc -> query($sql , $_POST['username_user']);
+	$sql = "SELECT * FROM user WHERE id = ?";
+	$result = $dbc -> query($sql , $_GET['id']);
 	$user = $result -> fetchArray();
-	if(isset($user['password_user']) && $user['password_user'] == $_POST['password_user'])
+	if($_SESSION['uid'] == $_GET['id'])
 	{
 		
-		$uid = $user['id'];
-		Authentication :: login($uid);
+		include 'userPanelAdmin_view.php';
+
 	
-			
-		$role = $user['role_user'];
-		Authorization :: role($role);
-		
-		//redirect to dashbord
-		redirect("updateUser_controller.php?id={$_SESSION['uid']}");
+//		redirect("updateUser_controller.php?id={$_SESSION['uid']}");
 	
 	
 	}
@@ -44,9 +33,7 @@ if(isset($_POST['submit']))
 		echo "رمز عبور صحیح نمی باشد";
 	}
 	
-	
-}
 
 
-include 'userPanelAdmin_view.php';
+
 ?>

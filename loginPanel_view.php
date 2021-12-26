@@ -15,7 +15,9 @@
         <form action="" method="post">
             <input type="text" name="username_user" id="username-user" placeholder="نام کاربری (ایمیل) ">
             <input type="password" name="password_user" id="password-user" placeholder="رمز عبور">
+			
 			<input  type="submit" class="btn" name="submit" id="submit" value="ورود">
+			
             <p>ورود با گوگل | فیسبوک</p>
 
             <div class="icons">

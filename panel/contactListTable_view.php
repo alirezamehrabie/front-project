@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contactListTable_style.css" type="text/css">
-    <title>مدیریت پیام</title>
+    <title>مدیریت پیام | پنل مدیر</title>
 </head>
 <body>
     <div class="container">

@@ -41,7 +41,6 @@ if(isset($_POST['submit']) && $_SESSION['uid'] == $uid)
 
 else
 {
-
   $sql = "SELECT * FROM user WHERE id = ?";
 
   $res = $dbc -> query($sql,$uid);

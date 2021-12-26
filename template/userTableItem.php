@@ -9,10 +9,15 @@
 
 
   <td>
-    <?php echo $user['username']; ?>
+    <?php echo $user['username_user']; ?>
   </td>
 
-
+	
+ <td>
+    <?php echo $user['password_user']; ?>
+ </td>
+	
+	
   <td>
     <?php echo $user['phone_user']; ?>
   </td>
@@ -22,9 +27,7 @@
   <?php echo $user['fullname_user']; ?>
 </td>
 
-<td>
-  <?php echo $user['address_user']; ?>
-</td>
+
 
   <td>
     <a class="btn btn-update" href="#">
@@ -37,7 +40,7 @@
       <!-- <button type="button" name="button-insert">افزودن</button> -->
     </a>
 
-    <a class="btn btn-delet" href="#">
+    <a class="btn btn-delet" href="../panel/removeUser_controller.php?id=<?php echo $user['id'] ?>">
       حذف
       <!-- <button type="button" name="button-delet">حذف</button> -->
     </a>

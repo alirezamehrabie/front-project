@@ -1,14 +1,15 @@
 <?php
 session_start();
 
+include 'settings.php';
+include 'db.php';
+include 'security.php';
+include 'functions.php';
+
 if(isset($_POST['submit']))
 {
 	//پردازش اطلاعات ورود به حساب
 	
-	include 'settings.php';
-	include 'db.php';
-	include 'security.php';
-	include 'functions.php';
 	
 	$dbc = new db($dbHost, $dbUser , $dbPass, $dbName);
 	$sql = "SELECT * FROM user WHERE username_user = ?";
@@ -27,11 +28,11 @@ if(isset($_POST['submit']))
 		//redirect to dashbord
 		
 		if(Authorization :: role_user() == 0)
-		redirect("userPanel_controller.php?id={$_SESSION['uid']}");
+		redirect("userPanel_controller.php?id={$user['id']}");
 		
 		
 		if(Authorization :: role_user() == 1)
-		redirect("userPanelAdmin_controller.php?id={$_SESSION['uid']}");
+		redirect("userPanelAdmin_controller.php?id={$user['id']}");
 		
 		
 	

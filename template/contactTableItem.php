@@ -45,7 +45,7 @@
       <!-- <button type="button" name="button-insert">افزودن</button> -->
     </a>
 
-    <a class="btn btn-delet" href="#">
+    <a class="btn btn-delet" href="../panel/removeContact_controller.php?id=<?php echo $contact['id'] ?>">
       حذف
       <!-- <button type="button" name="button-delet">حذف</button> -->
     </a>

@@ -27,7 +27,7 @@
 
 <!-- Image Product -->
   <td class="btns-feature">
-    <img src="<?php  echo $product["imagesrc_pro"]; ?>" alt="Picture Product" class="image_tumbnail">
+    <img src="../<?php  echo $product["imagesrc_pro"]; ?>" alt="Picture Product" class="image_tumbnail">
   </td>
 
   <td>
@@ -41,7 +41,7 @@
       <!-- <button type="button" name="button-insert">افزودن</button> -->
     </a>
 
-    <a class="btn btn-delet" href="#">
+    <a class="btn btn-delet" href="../panel/removeProduct_controller.php?id=<?php echo $product['id'] ?>">
       حذف
       <!-- <button type="button" name="button-delet">حذف</button> -->
     </a>

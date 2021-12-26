@@ -1,8 +1,20 @@
+<html>
+<head>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/e36ff0bc6c.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
 <?php
+session_start();
 
 include 'settings.php';
 include 'db.php';
-
+include 'security.php';
 
 $dbc = new db($dbHost, $dbUser, $dbPass, $dbName);
 
