@@ -20,7 +20,7 @@ if(isset($like['id']))
 {
 	$sql = "DELETE FROM likeproduct	WHERE id = ?";
 	$result = $dbc -> query( $sql, $like['id']);
-	echo "Dis Iiked";
+	echo "disliked";
 }
 else
 {

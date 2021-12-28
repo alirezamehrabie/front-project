@@ -1,5 +1,6 @@
-let anchorList = document.querySelectorAll(".card-component-fill")
-for( let anchor of anchorList){
+let anchorList = document.querySelectorAll(".card-component-fill");
+
+for(let anchor of anchorList){
     // find cards
     let card = anchor.closest(".card");
 
@@ -14,6 +15,8 @@ function cardFill(e){
         // window.location = address; // window.location.assign( address )
 }
 
+
+
 //like products
 let likeButtonIconList = document.querySelectorAll(".btn > .fa-heart");
 for(let likeButtonIcon of likeButtonIconList)
@@ -26,20 +29,51 @@ for(let likeButtonIcon of likeButtonIconList)
 function like(e)
 {
 	e.preventDefault();
-	let icon = this.querySelector(".fa-heart");
+	let url = this.href;
+	var icon = this.querySelector(".fa-heart");
+	fetch(url)
+	.then
+	(
+		function(response)
+		{
+			return response.text();
+			
+		}
+	)
+	.then
+	(
+		function(data)
+		{
+			
+			if(data === "liked")
+				{
+					icon.classList.add('fas');
+					icon.classList.remove('far');
+				}
+			else if(data === "disliked")
+				{
+					icon.classList.add('far');
+					icon.classList.remove('fas');
+				}
+		}
+	)
 	
-	if(icon.classList.contains('far'))
+	
+	.catch
+	(
+		function(error)
 		{
-			icon.classList.add('fas');
-			icon.classList.remove('far');
+			console.log(error);
 		}
-	else
-		{
-			icon.classList.add('far');
-			icon.classList.remove('fas');
-		}
+	)
 		
 }
+
+
+
+
+
+
 
 
 //bookmark products
@@ -54,17 +88,40 @@ for(let bookmarkButtonIcon of bookmarkButtonIconList)
 function bookmark(e)
 {
 	e.preventDefault();
-	let icon = this.querySelector(".fa-bookmark");
+	var icon = this.querySelector(".fa-bookmark");
+	let urlb = this.href;
 	
-	if(icon.classList.contains('far'))
+	fetch(urlb)
+	.then
+	(
+		function(response)
 		{
-			icon.classList.add('fas');
-			icon.classList.remove('far');
+			return response.text();
 		}
-	else
+	)
+	.then
+	(
+			function(data)
 		{
-			icon.classList.add('far');
-			icon.classList.remove('fas');
+			
+			if(data === "bookmarked")
+				{
+					icon.classList.add('fas');
+					icon.classList.remove('far');
+				}
+			else if(data === "disbookmarked")
+				{
+					icon.classList.add('far');
+					icon.classList.remove('fas');
+				}
 		}
+	)
+	.catch
+	(
+		function(error)
+		{
+			console.log(error);
+		}
+	)
 		
 }

@@ -20,13 +20,13 @@ if(isset($like['id']))
 {
 	$sql = "DELETE FROM basketProduct WHERE id = ?";
 	$result = $dbc -> query( $sql, $like['id']);
-	echo "Product removed";
+	echo "از سبد خرید حذف شد";
 }
 else
 {
 	$sql = "INSERT INTO basketProduct(uid, productId) VALUES(?, ?)";
 	$result = $dbc -> query( $sql, $uid, $productId );
-	echo "Product added";
+	echo "به سبد خرید افزوده شد";
 }
 
 $dbc -> close();

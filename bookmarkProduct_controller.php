@@ -20,13 +20,13 @@ if(isset($bookmark['id']))
 {
 	$sql = "DELETE FROM bookmarkProduct	WHERE id = ?";
 	$result = $dbc -> query( $sql, $bookmark['id']);
-	echo "Not a bookmark";
+	echo "disbookmarked";
 }
 else
 {
 	$sql = "INSERT INTO bookmarkProduct(uid, productId) VALUES(?, ?)";
 	$result = $dbc -> query( $sql, $uid, $productId );
-	echo "Bookmarked";
+	echo "bookmarked";
 }
 
 $dbc -> close();
