@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("fonts/fonts.css");
+
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+a
+{
+  text-decoration: none;
+  color: #000;
+}
+
+:lang(fa)
+{
+  direction: rtl;
+
+}
+
+:lang(en)
+{
+  direction: ltr;
+  text-align: left;
+}
+
+:root
+{
+  background-color: #444 !important;
+}
+
+.container
+{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.body-titr
+{
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  /* background-color: rgba(255, 255, 255, .3); */
+}
+
+.body-titr h1
+{
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding: 20px 10px;
+  margin: 0 auto;
+  border-radius: 4rem;
+  background-color: rgba(0, 0, 0, .6);
+  font-family: yekan-bakh;
+	font-weight: 100;
+  color: #ffffff;
+  font-size: 1.8em;
+}
+
+.container-product
+{
+  padding: 50px;
+  background-color: rgba(255, 255, 255, .58);
+  margin: 10px;
+  border-radius: 1em;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 8px;
+  background-color: transparent;
+}
+
+.image_tumbnail
+{
+  max-width: 64px;
+}
+
+.datatable
+{
+  font-family: iransans;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  border-collapse: collapse;;
+}
+
+.datatable td , .datatable th
+{
+  border-bottom: 1px solid #888;
+  padding: 8px 16px;
+}
+
+table.datatable tr
+{
+  height: 56px;
+  background-color: #fff;
+}
+
+table.datatable tr:first-child
+{
+  height: 56px;
+}
+
+table.datatable tr:nth-child(even)
+{
+  background-color: silver;
+}
+
+tr #number-user
+{
+  width: 60px;
+  border-left: 1px solid #888;
+}
+
+tr td a
+{
+  background: #fff;
+  width: 80px;
+  margin: 0 10px;
+  padding: 10px 35px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px 1px #777;
+  font-family: iran-light;
+  border-radius: 1em;
+}
