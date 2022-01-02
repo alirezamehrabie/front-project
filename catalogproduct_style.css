@@ -1,178 +1,294 @@
-@font-face {
-  font-family: Shabnam-Bold;
-  src: url(fonts/Shabnam\ Bold.ttf);
-}
-
-@font-face {
-  font-family: Shabnam-light;
-  src: url(fonts/Shabnam\ Light.ttf);
-}
-
-@font-face {
-  font-family: iran-light;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Light.ttf');
-}
-
-@font-face
-{
-  font-family: iran-normal;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Medium.ttf');
-}
-
-@font-face
-{
-  font-family: iran-bold;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Bold.ttf');
-}
-
-@font-face
-{
-  font-family: iran-black;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Black.ttf');
-}
+@import url("fonts/fonts.css");
 
 *
 {
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root
+{
+	font-size: calc(10px + 1vw)
 }
 
 a
 {
-  text-decoration: none;
-  color: #000;
+	text-decoration: none;;
 }
 
 :lang(fa)
 {
   direction: rtl;
- 
 }
 
 :lang(en)
 {
   direction: ltr;
-  text-align: left;
 }
 
-:root
-{
-  background-color: #444 !important;
-}
+
 
 .container
 {
-  width: 100%;
-  height: auto;
-  background-image:url(assets/images/upload/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0;
+	box-shadow: 0 0 3px 1px #ccc;
 }
 
-.body-titr
+
+
+.banner-productlist
 {
-  width: 100%;
-  height: auto;
-  padding: 20px 0;
-  /* background-color: rgba(255, 255, 255, .3); */
+	width: 100%;
+	height: auto;
+	border-radius: 0.4rem;
 }
 
-.body-titr h1
-{
-  text-align: center;
-  width: 50%;
-  height: auto;
-  padding: 20px 10px;
-  margin: 0 auto;
-  border-radius: 4rem;
-  background-color: rgba(0, 0, 0, .6);
-  font-family: iran-bold;
-  color: #ffffff;
-  font-size: 1.8em;
-}
 
+/*Container Products*/
 .container-product
 {
-  padding: 50px;
-  background-color: rgba(255, 255, 255, .58);
-  margin: 10px;
-  border-radius: 1em;
+	width: 100%;
+	margin: 5px auto;
+	background: #fff;
+	padding: 10px;
+	
 }
+
+.header-products
+{
+	text-align: center;
+	width: 100%;
+	height: 20px;
+	margin-bottom: 0px;
+	background: #fff;
+}
+.header-products p
+{
+	font-family: iransans-light;
+	color: #fff;
+	font-size: 1.2vw;
+}
+
 
 .grid-container
 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 8px;
-  background-color: transparent;
+	width: 100%;
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-around;
+	background: #fff;
+	
+}
+
+.card .image-product
+{
+	max-width: 100%;
+	width: 80%;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: .3em;
 }
 
 .card
 {
-  /* display: inline-block;
-  vertical-align: top; */
-  background-color: #ffffff;
-  box-shadow: 0px 6px 4px 0px #484848;
-  border-radius: 1rem;
-  overflow: hidden;
-  padding: 15px 15px;
+	display: flex;
+	width: 98%;
+	margin: 5px auto;
+	background: #fff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 1px 3px 0px #ccc;
+	padding-bottom: 8px;
+	border-radius: .3em;
 }
 
-.card img
+.text-body
 {
-  max-width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0px 6px 4px 1px #cccccc;
-  transition: transform .5s;
-}
-.card img:hover
-{
-  cursor: pointer;
-  /* box-shadow: 0px 0px 8px 1px #b0b0b0; */
-  transform: scale(1.02);
+	width: 100%;
+	padding: 5px 10px;
 }
 
-.card-body
+.card .name-titr
 {
-  padding: 20px;
-  border-top: 1px solid #c4c4c4;
-  margin-top: 20px;
+	
+	width: 100%;
+background: #134E5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	text-align: center;
+	margin-bottom: 8px;
+	padding: 8px 2px;
+	border-radius: .3em;
+	
 }
 
-.card-body h2
+.card .name-titr a
 {
-  font-family: iran-bold;
+	font-family: iransans-bold;
+	color: #fff;
+	font-size: .65rem;
+	
 }
 
-.card-body h3
+.text-body p
 {
-  font-family: iran-bold;
-  margin-top: 20px;
-  color: #720404;
+	padding: 8px 4px;
+	font-family: iransans-light;
+	color: #a5a5a9;
+	font-size: .65rem;
+	border-bottom: 1px solid #CCCCCC;
 }
 
-.card-body p
+.text-body p i
 {
-  font-family: shabnam-light;
-  margin-top: 20px;
+	color: #084D68;
+	
+	margin-left: 5px;
+	
 }
 
-.card-body .btn-buy
+.text-body p span
 {
-  display: block;
-  width: 60%;
-  margin: 20px auto 0 auto;
-  padding: 10px 0;
-  text-align: center;
-  border-radius: 2rem;
-  font-family: iran-black;
-  background: #004d7d;
-  color: #ffffff;
-  border: none;
+	color: #000;
+	font-family: iransans-medium;
 }
 
-.card-body .btn-buy:hover
+
+.btns
 {
-  cursor: pointer;
+	width: 100%;
+	height: auto;
+	padding: 12px 0;
+	display: flex;
+	border-radius: .3em;
+	justify-content: space-around;
 }
+
+.btns a i
+{
+	cursor: pointer;
+	font-size: 1rem;
+	transition: .4s;
+}
+
+.btns a i:hover
+{
+	transform: scale(1.3);
+}
+
+.btns a i:nth-child(1)
+{
+	color: #005F99 !important;
+}
+
+.btns .fa-heart
+{
+	color: #F6416C !important;
+}
+.btns a i:nth-child(3)
+{
+	color: #00B8A9 !important;
+}
+
+.btn-detail
+{
+	cursor: pointer;
+	width: 70%;
+	text-align: center;
+	padding: .6em .5em;
+	margin: 4px auto;
+	font-family: shabnam-bold;
+	font-size: .65rem;
+ 	transition: .2s;
+	border-radius: .3em;
+	color: #5B5B5B;
+	background-color: #EBEBEB;
+	
+}
+.btn-detail:hover
+{
+	background-color: #C9E5FF;
+	color: #004EAC;
+	border:none;
+	
+}
+
+/*Max Width 1000px*/
+@media screen and (max-width: 1000px)
+{
+	.container
+	{
+		width: 90%;
+	}
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 630px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+	.grid-container
+	{
+		width: 100%;
+		grid-template-columns: auto auto auto;
+		
+	}
+
+}
+
+
+@media screen and (max-width: 460px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+		.grid-container
+	{
+		grid-template-columns: auto auto;
+		
+	}	
+}
+
+
+
+@media screen and (max-width: 320px)
+{
+		.grid-container
+	{
+		width: 100%;
+		grid-template-columns: auto;
+		
+	}
+}
+
+
+
+
+
+
+

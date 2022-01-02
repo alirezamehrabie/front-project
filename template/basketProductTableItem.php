@@ -1,31 +1,45 @@
 <?php
+
 $sql_product = "Select * From product where id = {$basket['productId']}";
 $result_product = $dbc -> query($sql_product);
 $resultProduct = $result_product -> fetchArray();
+
 ?>
 
-<tr>
-	<td>
-		<?php echo $basket['id'] ?>
-	</td>
+<div class="card">
+	
+	<div id="section_1" class="img-card">
+		<img src="<?php echo $resultProduct['imagesrc_pro'] ?>" alt="image">
+	</div>
+	
 
-	<td>
-		<?php echo $basket['uid'] ?>
-	</td>
+	<div class="text-card">
+	
+		<p><span>کد کالا: </span><?php echo $basket['productId'] ?></p>
+	
+	
+		<p><span>نام کالا: </span><?php echo $resultProduct['name_pro'] ?></p>
 
-	<td>
-		<?php echo $basket['productId'] ?>
-	</td>
 	
-	<td>
-	<?php echo $resultProduct['number_pro'] ?>
-	</td>
+		<p><span>قیمت کالا: </span><?php echo $resultProduct['price_pro'] ?> تومان</p>
+		
 	
-	<td>
-	<?php echo $resultProduct['name_pro'] ?>
-	</td>
+		<p><span> رنگ: </span><?php echo $resultProduct['color_pro'] ?></p>
+		
 	
-	<td>
-	<?php echo $resultProduct['price_pro'] ?>
-	</td>
-</tr>
+		<p><span> برند: </span><?php echo $resultProduct['company_pro'] ?></p>
+		
+	</div>	
+		
+	
+	<a class="btn btn-remove" href="../../front-project/removeBasketProduct_controller.php?id=<?php echo $basket['productId']?>">
+		<i class="fas fa-trash-alt"></i>
+	</a>
+		
+</div>
+
+
+
+
+
+

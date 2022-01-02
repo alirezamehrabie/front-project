@@ -73,6 +73,12 @@
   src: url("IRANSansWeb(FaNum)_Light.ttf");
 }
 
+@font-face 
+{
+  font-family: iransans-ultralight;
+  src: url("IRANSansWeb(FaNum)_UltraLight.ttf");
+}
+
 /*Yekan Series*/
 
 @font-face 
@@ -88,7 +94,38 @@
 }
 
 
+/*Irancell*/
 
+@font-face
+{
+  font-family: irancell-light;
+  src: url("Irancell_Light.ttf");
+}
 
+@font-face
+{
+  font-family: irancell-medium;
+  src: url("Irancell_Medium.ttf");
+}
+
+@font-face
+{
+  font-family: irancell-bold;
+  src: url("Irancell_Bold.ttf");
+}
+
+@font-face
+{
+  font-family: irancell-regular;
+  src: url("Irancell_Regular.ttf");
+}
+
+/*Snapp*/
+
+@font-face
+{
+  font-family: snapp;
+  src: url("Snapp.ttf");
+}
 
 

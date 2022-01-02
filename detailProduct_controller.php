@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 include 'settings.php';
@@ -9,10 +10,15 @@ $dbc = new db($dbHost, $dbUser, $dbPass, $dbName);
 
 $sql = "SELECT * FROM product";
 $result = $dbc -> query($sql);
-$productList = $result -> fetchAll();
+$productSelected = $result -> fetchAll();
 
 include 'productList_view.php';
 
 $dbc -> close();
+
+
+
+
+include "detailProduct_view.php";
 
 ?>

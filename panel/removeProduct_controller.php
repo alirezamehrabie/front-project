@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 include '../settings.php';
 include '../db.php';
 include '../security.php';

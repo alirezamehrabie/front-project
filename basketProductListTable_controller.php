@@ -17,10 +17,16 @@ if(! Authentication :: check())
 //connect database
 $dbc = new db($dbHost, $dbUser, $dbPass, $dbName);
 
-//Select Basket
+//Select Basket Product
 $sql = "SELECT * FROM basketProduct Where uid = ?";
 $result = $dbc -> query($sql, Authentication :: uid());
 $resultBasket = $result -> fetchAll();
+
+
+//Select User
+$sql_user = "Select * From user where id = {$_SESSION['uid']}";
+$result_user = $dbc -> query($sql_user);
+$resultUser = $result_user -> fetchArray();
 
 
 

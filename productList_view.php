@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="catalogproduct_style.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/e36ff0bc6c.js" crossorigin="anonymous"></script>
 	
+	<!--Link Font Awesome Pro-->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
+	<!--End Link Font Awesome Pro-->
+	<link rel="icon" type="image/x-icon" href="assets/images/upload/favicon.ico">
     <title>کاتالوگ محصولات</title>
 </head>
+	
 <body>
-    <div class="container">
 
-        <div class="body-titr">
-             <h1>لیست محصولات فروشگاه لوازم جانبی رایانه تکنوپلاس</h1>
-        </div>
+	<div class="container">
+		<img draggable="false" src="assets/images/upload/productList/productList_banner.png" alt="banner-product" class="banner-productlist">
 
         <div class="container-product">
-           
+			<div class="header-products"></div>
             <div class="grid-container">
                 <?php
                  foreach ($productList as $product){
@@ -31,4 +32,5 @@
     </div>
 	<script type="text/javascript" src="assets/js/Components.js"></script>
 </body>
+	
 </html>

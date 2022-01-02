@@ -4,6 +4,13 @@ include 'settings.php';
 include 'db.php';
 include 'security.php';
 
+
+if(! Authentication :: check())
+{
+	echo 'با هیچ حساب کاربری وارد نشده اید';
+	exit;
+}
+
 // A. validation
 $productId = $_GET['id'];
 $uid = Authentication :: uid();

@@ -3,8 +3,9 @@
 
 *
 {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 a
@@ -13,10 +14,14 @@ a
   color: #000;
 }
 
+img
+{
+	pointer-events: none;
+}
+
 :lang(fa)
 {
   direction: rtl;
-
 }
 
 :lang(en)
@@ -25,10 +30,224 @@ a
   text-align: left;
 }
 
-:root
+body
 {
-  background-color: #444 !important;
+	background: #159957;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #155799, #159957);
+	background: -o-linear-gradient(left, #155799, #159957);
+	background: linear-gradient(to right, #155799, #159957);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
+
+.container
+{
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	padding: 0 0;
+	
+}
+
+.banner
+{
+	text-align: center;
+	min-width: 100%;
+	margin: 0 auto;
+	height: 250px;
+	background-repeat: no-repeat;
+	background: #0F2C67;
+	margin-bottom: 10px; 
+}
+.banner img
+{
+	display: block;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+/*Titr Text*/
+
+#titr-container
+{	
+	display: flex;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: center;
+	background: #1D3557;
+	border-radius: 1em;
+	margin: 0 auto 8px auto;
+	width: 450px;
+	font-family: shabnam-light;
+	color: #ffffff;
+	line-height: 1;
+	padding: 10px 0;
+}
+
+#titr-container h1
+{
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 2;	
+}
+
+#titr-container h1 span
+{
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+#titr-container i
+{
+	display: inline-block;
+	font-size: 3em;
+	margin-left: 10px;
+	height: auto;
+	
+}
+
+#titr-container h3
+{
+	display: block;
+	width: 100%;
+}
+
+#titr-codeuser
+{
+	display: flex;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: center;
+	border-radius: .5em;
+	margin: 0 auto;
+	width: 200px;
+	background: #E63946;
+	color: #ffffff;
+	line-height: 1;
+	padding: 10px 0;
+}
+
+
+#titr-codeuser h3
+{
+	font-weight: 100;
+	font-family: iransans-light;
+}
+
+/*Container Card*/
+
+.container-card
+{
+	text-align: center;
+	margin: 15px auto;
+	height: auto;
+	background: rgba(255,255,255,0.30);
+	width: 90%;
+	border-radius: 1em;
+	padding: 10px 0px; 
+}
+
+.card
+{
+	
+	display: inline-block;
+	height: auto;
+	margin: .3%;
+	margin-bottom: 10px;
+	width: 32%;
+	border-radius: 1em;
+	background: #FFFFFF;	
+	padding: 2px 2px;
+}
+
+.text-card
+{
+	width: 98%;
+	margin: 0 auto;
+	padding: 0px;
+	
+
+}
+
+.text-card p
+{
+	margin-bottom: 5px;
+	border-radius: .2em;
+	padding: 5px 20px;
+	text-align: right;
+	width: 100%;
+	font-size: 1em;
+	font-family: iransans-medium;
+	color: #000000;
+	box-shadow: 0 0 4px 0px #E8E8E8;
+}
+
+.text-card p:nth-child(even)
+{
+	background: #fff;
+	
+}
+
+.text-card p:nth-child(odd)
+{
+	background: #fff;
+	
+}
+
+
+.text-card p span
+{
+	
+	font-family: yekan-boom;
+}
+
+.card .img-card
+{		
+	text-align: center;
+	width: 80%;
+	height: 100px;
+	margin: 8px auto;
+	border-radius: 1em;
+	background-size: cover;
+	background-position: center;	
+}
+
+.card .img-card img
+{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 1em;
+}
+
+.card .btn-remove
+{
+	text-align: center;
+	border-radius: .5em;
+	display: block;
+	width: 80px;
+	padding: 10px 20px;
+	background: #A30002;
+	margin: 10px auto;
+}
+
+.card .btn-remove i
+{
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+/*
 
 .container
 {
@@ -44,7 +263,7 @@ a
   width: 100%;
   height: auto;
   padding: 20px 0;
-  /* background-color: rgba(255, 255, 255, .3); */
+   background-color: rgba(255, 255, 255, .3); 
 }
 
 .body-titr h1
@@ -73,9 +292,10 @@ a
 .grid-container
 {
   display: grid;
-  grid-template-columns: auto;
-  grid-gap: 8px;
+  grid-template-columns: auto; 
+  grid-gap: 5px;
   background-color: transparent;
+
 }
 
 .image_tumbnail
@@ -83,14 +303,19 @@ a
   max-width: 64px;
 }
 
+table
+{
+	
+}
 .datatable
 {
+
   font-family: iransans;
   text-align: center;
   width: 100%;
   border: 1px solid #000000;
   border-radius: 4px;
-  border-collapse: collapse;;
+
 }
 
 .datatable td , .datatable th
@@ -133,3 +358,4 @@ tr td a
   font-family: iran-light;
   border-radius: 1em;
 }
+*/
