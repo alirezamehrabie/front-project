@@ -1,11 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+@import url("fonts/fonts.css");
 
 *
 {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+::placeholder
+{
+	font-family: iransans;
+	font-size: .7rem;
 }
 
 :root
@@ -31,7 +38,438 @@ a
 
 body
 {
+	font-family: iransans-light;
+}
+
+.container-main
+{
+	width: 900px;
+	height: auto;
+	background: #ffffff;
+	box-shadow: 0 0 6px 1px #ccc;
+	padding-bottom: 5px;
+	margin: 5px auto 20px auto; 
+}
+
+.image-banner
+{
+	width: 100%;
+	height: auto;
+}
+
+.container
+{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 20px;
 	
 }
+.container-comment ::placeholder
+{
+	font-size: .6rem;
+}
+.container-comment
+{
+	width: 90%;
+	padding: 50px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid #ececec;
+}
+
+.container-comment h2
+{
+	background: #fff;
+	margin: 10px 0 0 0;
+	font-family: iransans-light;
+	color: #D1603D;
+	font-size: 1rem;
+}
+.container-comment p
+{
+	background: #fff;
+	color: #6A6A6A;
+	font-size: .7em;
+}
+#comment_form
+{
+	width: 100%;
+	background: #fff;
+	padding: 4px 8px;
+}
+.form-group textarea
+{
+	width: 60%;
+	resize: none;
+	color: #474747;
+	font-size: .6rem;
+	padding: 8px 16px;
+	line-height: 1.6;
+}
+.form-group *
+{
+	font-family: iransans-bold;
+	border-radius: .3rem;
+	box-shadow: 0 0 10px #ececec;
+	border: 2px solid #ececec;
+}
+.form-group *:focus
+{
+	outline: none;
+}
+.form-group
+{
+	width: 100%;
+	background: #fff;
+}
+.form-group input
+{
+	width: 60%;
+	color: #474747;
+	padding: 8px 16px;
+	margin: 8px 0;
+}
+.form-group input[type="submit"]
+{
+	width: 25%;
+	border: none;
+	cursor: pointer;
+	background: #F2AF29;
+	box-shadow: 0 0 10px #F2AF29;
+	color: #fff;
+	font-size: .6rem;
+	font-weight: 600;
+}
+#comment_message *
+{
+	padding: 6px 20px;
+	font-size: .6rem;
+	margin: 0 auto;
+	font-family: iransans-medium;
+	border-radius: .2rem;
+}
+#comment_message .text-error
+{
+	color: #82052f;
+	margin: 4px auto;
+	display: block;
+	width: 40%;
+	background: #FDE3EC;
+	box-shadow: 0 0 10px #FDE3EC;
+}
+#comment_message .text-success
+{
+	color: #00B87A;
+	background: #E1FFF5;
+	box-shadow: 0 0 10px #E1FFF5;
+}
+.panel
+{
+	border: 1px solid #ccc;
+	border-radius: .3rem;
+	padding: 8px 8px;
+	margin-bottom: 12px;
+}
+.panel-reply
+{
+	width: 80%;
+	background: #FFFAE9;
+}
+.panel-heading
+{
+	font-size: .6rem;
+}
+.panel-heading b
+{
+	color: #82052f;
+}
+.panel-body
+{
+	color: #282828;
+	font-family: iransans-bold;
+	font-size: .7rem;
+	border-top: 1px solid #ececec;
+	margin-top: 8px;
+	padding: 8px 0;
+}
+.panel-footer
+{
+	padding: 16px 0 0 0;
+}
+.panel-footer button
+{
+	cursor: pointer;
+	display: block;
+	border: none;
+	background: #FFEDBA;
+	border-radius: .2rem;
+	font-family: iransans-medium;
+	color: #444;
+	width: 20%;
+	padding: 8px 0;
+	margin: 0 auto;
+}
+
+
+.col
+{
+	flex-basis: 50%;
+	height: auto;
+	background: #fff;
+	margin: 0 .1rem;
+	border-radius: .2rem;
+	box-shadow: 0 0 5px #ececec;
+	padding: 10px 0;
+}
+
+.right
+{
+	box-shadow: 0 0 5px #fff;
+}
+
+.right img
+{
+	display: block;
+	margin: 0 auto;
+	width: 99%;
+	padding: 20px;
+	
+}
+
+.left .row-section
+{
+	padding: 8px;
+	height: auto;
+	vertical-align: middle;
+	align-content: center;
+	line-height: 2;
+	
+	
+}
+
+.left .row-section i
+{
+	margin-left: 8px;
+	font-size: .8rem;
+	vertical-align: middle;
+}
+
+
+.left .name-brand
+{
+	text-align: center;
+}
+
+.left .name-brand h1 i
+{
+	color: #57D1C9;
+}
+
+.left .name-brand p i
+{
+	color: #B87E00;	
+}
+.left .name-brand p:nth-child(2) i
+{
+	color: #CD80E6;	
+}
+
+.left .name-brand h1
+{
+	text-align: right;
+	font-size: .8rem;
+	font-family: iransans-light;
+	padding: 6px 10px;
+	color: #6E6E6E;
+	background: #EEFAF9;
+	border-radius: .2rem;
+	font-weight: 100;
+}
+
+.left .name-brand p
+{
+	display: inline-block;
+	font-family: iransans-light;
+	color: #707070;
+	width: 45%;
+	border-bottom: 1px solid #E4E4E4;
+	margin: 0 auto;
+	font-size: .6rem;
+	padding: 0px 12px;
+	background: #fff;	
+	
+}
+
+
+
+
+.left .stars
+{
+	text-align: center;
+	padding: 2px 5px;
+}
+
+.left .stars i
+{
+	color: #eec60a;
+}
+
+.left .stars i:last-child
+{
+	color: #767676;
+}
+
+
+
+/*Section Detail*/
+.detail
+{
+	
+}
+.detail i
+{
+	color: #2E94B9;
+}
+.detail h4
+{
+	border-top: 1px solid #B0DBEB;
+	font-size: .6rem;
+	color: #2E94B9;
+}
+.detail p
+{
+	font-size: .55rem;
+	word-spacing: -1px;
+	padding: 0 15px;
+	font-family: iransans-light;
+	color: #8C8C8C;
+}
+
+
+
+/*Section Price*/
+.price i
+{
+	color: #6abe83;
+}
+.price h4
+{
+	border-top: 1px solid #AEDBBB;
+	font-size: .6rem;
+	color: #6abe83;
+}
+.price p span
+{
+	font-size: 1rem;
+	font-family: iransans-bold;
+	color: #E7475E;
+}
+.price p
+{
+	
+	font-size: .6rem;
+	padding: 0px 25px;
+	font-family: iransans-light;
+	color: #E7475E;
+}
+
+
+/*Section Options*/
+.options
+{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	background: #fff;
+	padding: 5px;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	
+}
+
+.options *
+{
+	margin: 0 12px;
+}
+
+.options input
+{
+	width: 50%;
+	font-size: .8rem;
+	text-align: center;
+	color: #444;
+	border: 1px solid #e5e5e5;
+	padding: 5px 5px;
+	border-radius: .2rem;
+	font-family: iransans-bold;
+}
+
+.options button
+{
+	width: 100%;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	padding: 10px 0;
+	font-family: iransans-bold;
+	background-image: -webkit-linear-gradient(left, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+	background-image: -o-linear-gradient(left, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+	background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+	transition: 0.5s;
+	background-size: 200% auto;
+	box-shadow: 0 0 20px 0 #e5e5e5;
+	border-radius: .2rem;
+}
+
+.options button:hover
+{       
+	background-position: right center;  
+	color: #fff;      
+	text-decoration: none;
+}
+
+
+/*Section Exit*/
+.exit
+{
+	width: 35%;
+	border-radius: .2rem;
+	margin: 5px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #990033;
+	background: #FFE1EB;
+	cursor: pointer;
+	
+}
+.exit p
+{
+	font-family: iransans-light;
+	font-size: .7rem;
+}
+.exit i
+{
+	color: #990033;
+	font-size: 1rem !important;
+	margin: 0 .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

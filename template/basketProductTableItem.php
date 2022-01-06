@@ -9,7 +9,7 @@ $resultProduct = $result_product -> fetchArray();
 <div class="card">
 	
 	<div id="section_1" class="img-card">
-		<img src="<?php echo $resultProduct['imagesrc_pro'] ?>" alt="image">
+		<img src="assets\images\upload\products\<?php echo $resultProduct['imagesrc_pro'] ?>" alt="image">
 	</div>
 	
 

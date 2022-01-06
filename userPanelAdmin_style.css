@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 @import url("fonts/fonts.css");
 
 *
@@ -10,75 +11,105 @@
 	box-sizing: border-box;
 }
 
-body
+:lang(fa)
 {
 	direction: rtl;
-	font-family: iransans-medium;
+}
+:lang(en)
+{
+	direction: ltr;
+}
+
+:root
+{
+	font-size: calc(1em + 1vw);
+}
+
+body
+{
+	
 }
 
 
 .wrapper .sidebar
 {
-	
-  background: #f8da4e;
+	background: #FFDB48;
   position: fixed;
   top: 0;
   right: 0;
-  width: 225px;
+  width: 250px;
   height: 100%;
-  padding: 25px 5px;
+  padding: 16px 8px;
   transition: all 0.8s ease;
 }
 
-.wrapper .sidebar .profile{
-  margin-bottom: 30px;
+.wrapper .sidebar .profile
+{
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .wrapper .sidebar .profile h2
 {
-	font-family: vazir-bold;
+	font-family: shabnam;
+	color: #000;
 	margin-bottom: 2vh;
-	font-size: 3vw;
+	font-size: 1.5rem;
 }
 
-.wrapper .sidebar .profile img{
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
+.wrapper .sidebar .profile img
+{
+    display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
 }
 
-.wrapper .sidebar .profile h3{
-  color: #2a2925;
-  margin: 10px 0 5px;
+.wrapper .sidebar .profile h3
+{
+	color: #000;
+	font-family: Iransans-light;
+	margin: 10px 0 5px;
+	font-size: .52rem;
 }
 
-.wrapper .sidebar .profile p{
-  color: #2a2925;
-  font-size: 14px;
+.wrapper .sidebar .profile p
+{
+	color: #000;
+	font-family: iransans-light;
+	font-weight: 500;
+	margin: 8px 0 5px;
+	font-size: .5rem;
 }
 
 
-
-.wrapper .sidebar ul li a{
-	background: #2a2925;
-  display: block;
-  padding: 13px 30px;
-  border-bottom: 1px solid #f8da4e;
-  color: #ffffff;
-  font-size: 1vw;
-  position: relative;
+.wrapper .sidebar ul 
+{
+	padding: 5px 5px;
+	background: #494949;
+	border-radius: .2em;
+}
+.wrapper .sidebar ul li a
+{
+	position: relative;
+ 	display: block;
+	border-radius: .2rem;
+	background-color: transparent;
+	font-family: iransans-light;
+ 	padding: 10px 16px;
+	margin: 2px 0;
+    color: #ffffff;
+    font-size: .45rem;
+	transition: .6s;
+    
 	
-	border-bottom-left-radius: 5px; 
-	border-top-right-radius: 5px; 
-	
 }
 
-.wrapper .sidebar ul li a .icon{
-  color: #dee4ec;
-  width: 30px;
+.wrapper .sidebar ul li a .icon
+{
+  color: #FFFFFF;
+  width: 20px;
   display: inline-block;
 }
 
@@ -87,19 +118,21 @@ body
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
   
-	color: #f8da4e;
-    background: #2a2925;
+	color: #fff;
+	font-family: iransans-bold;
+	transition: .6s;
+    background: #2E2E2E;
 	
 }
 
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon{
-  color: #f8da4e;
+  color: #000;
 }
 .wrapper .sidebar ul li a:hover i,
 .wrapper .sidebar ul li a.active i
 {
-	color: #f8da4e;	
+	color: #fff;	
 }
 
 .wrapper .sidebar ul li a:hover:before,
@@ -109,36 +142,39 @@ body
 .wrapper .sidebar ul li a span i
 {
 	color: #fff;
+	
 }
 
 
-.wrapper .section{
+.wrapper .section
+{
   width: calc(100%);
   margin-right: 0px;
   transition: all 0.6s ease;
 }
 
-.wrapper .section .top_navbar{
+.wrapper .section .top_navbar
+{
   background: #2a2925;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 0 25px;
+  padding: 0 30px;
   line-height: 1;
  
 }
 .wrapper .section .top_navbar .hamburger
 {
-  text-align: left;
-  display: block;
-  float: left;
+	text-align: left;
+  	display: block;
+  	float: left;
 }
-.wrapper .section .top_navbar .hamburger a{
 
+.wrapper .section .top_navbar .hamburger a
+{
 	font-size: 28px;
-  color: #ffffff;
-
+	color: #ffffff;
 }
 
 .wrapper .section .top_navbar .hamburger a:hover{
@@ -153,7 +189,7 @@ body
 }
 
 body.active .wrapper .sidebar{
-  right: -225px;
+  right: -250px;
 }
 
 body.active .wrapper .section{

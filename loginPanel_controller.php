@@ -27,7 +27,7 @@ if(isset($_POST['submit']))
 		
 		//redirect to dashbord
 		
-		if(Authorization :: role_user() == 0)
+		if(Authorization :: role_user() == 2)
 		redirect("userPanel_controller.php?id={$user['id']}");
 		
 		

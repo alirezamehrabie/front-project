@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="assets/images/upload/favicon.ico">
     <link rel="stylesheet" href="userPanelAdmin_style.css" type="text/css">
-	<link rel="stylesheet" href="fonts/fonts.css" type="text/css">
-    <title>پنل کاربری مدیران | ونوس</title>
+    <title>پنل کاربران مدیر | ونوس</title>
     </head>
 	
 <body>
-     
-<div class="wrapper">
-    
-	<div class="section">
-		<div class="top_navbar">
-			<div class="hamburger">
-				<a href="#">
-					<i class="fas fa-bars"></i>
-   			    </a>
+	   
+	<div class="wrapper">
+
+		<div class="section">
+			<div class="top_navbar">
+				<div class="hamburger">
+					<a href="#"><i class="fas fa-bars"></i></a>
+				</div>
 			</div>
 		</div>
-    <!-- <div class="container">
-      Lirure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-    </div> -->
-	</div>
-  
-        <div class="sidebar">
-            <div class="profile">
+
+
+		<div class="sidebar">
+
+			<div class="profile">
 				<h2>ونوس</h2>
-                <h4>مدیر: <?php echo $user['fullname_user'] ?></h4>
-                <p>پنل اختصاصی مدیران سایت</p>
-            </div>
-            <ul>
-				
-                <li>
-                    <a href="#" class="active">
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="item">صفحه اصلی</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-desktop"></i></span>
-                        <span class="item">داشبورد</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="panel/userListTable_controller.php">
-                        <span class="icon"><i class="fa fa-user"></i></span>
-                        <span class="item">کاربران سایت</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="panel/contactListTable_controller.php">
-                        <span class="icon"><i class="far fa-envelope-open"></i></span>
-                        <span class="item">لیست پیام ها</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="panel/productListTable_controller.php">
-                        <span class="icon"><i class="fa fa-th"></i></span>
-                        <span class="item">لیست محصولات</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">گزارشات</span>
-                    </a>
-                </li>
-				
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-user-shield"></i></span>
-                        <span class="item">مشخصات مدیر</span>
-                    </a>
-                </li>
-				
-                <li>	
+				<h3>مدیر: <?php echo $user['fullname_user']; ?></h3>   
+				<p>پنل کاربران مدیر </p>
+			</div>
+
+
+			<ul>
+				<li>     
+					<a href="index.php" class="active">
+						<span class="icon"><i class="fad fa-home-lg-alt"></i></span>  
+						<span class="item">صفحه اصلی</span>
+					</a>	
+				</li>
+
+<!--
+				<li>
 					<a href="#">
-                        <span class="icon"><i class="fas fa-cog"></i></span>
-                        <span class="item">تنظیمات</span>
+						<span class="icon"><i class="fad fa-desktop"></i></span>
+						<span class="item">داشبورد</span>
 					</a>
-                </li>
+				</li>
+-->
+
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fad fa-bookmark"></i></span>
+						<span class="item">لیست ذخیره شده ها</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fad fa-heart"></i></span>
+						<span class="item">لیست علاقه مندی ها</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="panel/contactListTable_controller.php">
+						<span class="icon"><i class="fad fa-envelope"></i></span>
+						<span class="item">لیست پیام های ارسالی</span>
+					</a>
+				</li>	
+
+				<li>
+					<a href="panel/userListTable_controller.php">
+						<span class="icon"><i class="fad fa-users"></i></span>
+						<span class="item">بخش مدیریت کاربران</span>
+					</a>
+				</li>
 				
-            </ul>
-        </div>  
-    </div>
+				<li>
+					<a href="addUser_controller.php">
+						<span class="icon"><i class="fad fa-users"></i></span>
+						<span class="item">ثبت نام کاربر جدید</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="panel/productListTable_controller.php">
+						<span class="icon"><i class="fad fa-box-full"></i></span>   
+						<span class="item">بخش مدیریت محصولات</span>
+					</a>  
+				</li>
+
+
+				<li>		
+					<a href="basketProductListTable_controller.php?id=<?php echo Authentication :: uid() ?>">     
+						<span class="icon"><i class="fad fa-shopping-basket"></i></span>       
+						<span class="item">سبد خرید من</span>	
+					</a>
+				</li>
+				
+				
+				<li>		
+					<a href="addProduct_controller.php">     
+						<span class="icon"><i class="fad fa-portrait"></i></span>       
+						<span class="item">افزودن محصول جدید</span>	
+					</a>
+				</li>
+
+				<li>	
+					<a href="#"> 
+						<span class="icon"><i class="fad fa-sign-out-alt"></i></span>  
+						<span class="item">خروج از حساب کاربری</span>	
+					</a>
+				</li>
+			</ul> 
+			
+		</div>  
+	</div>
 </body>
 	
 <script src="assets/js/userPanel.js"></script>

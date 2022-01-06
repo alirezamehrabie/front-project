@@ -27,18 +27,13 @@
 
 <!-- Image Product -->
   <td class="btns-feature">
-    <img src="../<?php  echo $product["imagesrc_pro"]; ?>" alt="Picture Product" class="image_tumbnail">
+    <img src="../assets/images/upload/products/<?php echo $product['imagesrc_pro'] ?>" alt="Picture Product" class="image_tumbnail">
   </td>
 
   <td>
     <a class="btn btn-update" href="#">
       ویرایش
       <!-- <button type="button" name="button-update">ویرایش</button> -->
-    </a>
-
-    <a class="btn btn-insert" href="#">
-      افزودن
-      <!-- <button type="button" name="button-insert">افزودن</button> -->
     </a>
 
     <a class="btn btn-delet" href="../panel/removeProduct_controller.php?id=<?php echo $product['id'] ?>">

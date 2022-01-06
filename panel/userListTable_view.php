@@ -8,16 +8,12 @@
     <title>مدیریت کاربران | پنل مدیر</title>
 </head>
 <body>
+	
+	
     <div class="container">
-
-        <div class="body-titr">
-             <h1>کاربران فروشگاه</h1>
-        </div>
-
-        <div class="container-product">
-
-            <div class="grid-container">
-
+		<img src="../assets/images/upload/banner/UsersBanner.png" alt="بنر کاربران">
+		
+		<div class="grid-container">	
               <table class="datatable">
                 <tr>
                   <th>شماره</th>
@@ -34,12 +30,11 @@
                    }
                   ?>
 
-              </table>
-
-
-            </div>
-        </div>
-    </div>
-
+			</table>
+		</div>
+		
+		<a href="../userPanelAdmin_controller.php"><div class="back">بازگشت به پنل کاربری</div></a>
+		
+	</div>
 </body>
 </html>

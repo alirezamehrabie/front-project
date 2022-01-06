@@ -1,8 +1,6 @@
-<!-- Table Row -->
-<tr>
-<!-- Table Data -->
 
-<!-- Number Product -->
+<tr>
+
   <td id="number-user">
     <?php echo $user['id']; ?>
   </td>
@@ -33,11 +31,6 @@
     <a class="btn btn-update" href="#">
       ویرایش
       <!-- <button type="button" name="button-update">ویرایش</button> -->
-    </a>
-
-    <a class="btn btn-insert" href="#">
-      افزودن
-      <!-- <button type="button" name="button-insert">افزودن</button> -->
     </a>
 
     <a class="btn btn-delet" href="../panel/removeUser_controller.php?id=<?php echo $user['id'] ?>">

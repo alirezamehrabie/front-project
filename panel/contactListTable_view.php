@@ -9,10 +9,7 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="body-titr">
-             <h1>پیام بازدیدکنندگان و کاربران فروشگاه</h1>
-        </div>
+		<img src="../assets/images/upload/banner/ContactBanner.png" alt="BannerContact">
 
         <div class="container-product">
 

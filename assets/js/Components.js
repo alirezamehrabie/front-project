@@ -47,13 +47,13 @@ function like(e)
 			
 			if(data === "liked")
 				{
-					icon.classList.add('fas');
-					icon.classList.remove('far');
+					icon.classList.add('far');
+					icon.classList.remove('fad');
 				}
 			else if(data === "disliked")
 				{
-					icon.classList.add('far');
-					icon.classList.remove('fas');
+					icon.classList.add('fad');
+					icon.classList.remove('far');
 				}
 		}
 	)
@@ -106,13 +106,13 @@ function bookmark(e)
 			
 			if(data === "bookmarked")
 				{
-					icon.classList.add('fas');
+					icon.classList.add('fad');
 					icon.classList.remove('far');
 				}
 			else if(data === "disbookmarked")
 				{
 					icon.classList.add('far');
-					icon.classList.remove('fas');
+					icon.classList.remove('fad');
 				}
 		}
 	)

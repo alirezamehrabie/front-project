@@ -35,15 +35,6 @@
 
 
   <td>
-    <a class="btn btn-update" href="#">
-      ویرایش
-      <!-- <button type="button" name="button-update">ویرایش</button> -->
-    </a>
-
-    <a class="btn btn-insert" href="#">
-      افزودن
-      <!-- <button type="button" name="button-insert">افزودن</button> -->
-    </a>
 
     <a class="btn btn-delet" href="../panel/removeContact_controller.php?id=<?php echo $contact['id'] ?>">
       حذف

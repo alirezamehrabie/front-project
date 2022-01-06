@@ -11,7 +11,9 @@ $sql = "SELECT * FROM product";
 $result = $dbc -> query($sql);
 $productList = $result -> fetchAll();
 
+
 include 'productList_view.php';
+
 
 $dbc -> close();
 

@@ -17,12 +17,13 @@
 <body>
 
 	<div class="container">
-		<img draggable="false" src="assets/images/upload/productList/productList_banner.png" alt="banner-product" class="banner-productlist">
+		<img draggable="false" src="assets/images/upload/banner/productList_banner.png" alt="banner-product" class="banner-productlist">
 
         <div class="container-product">
 			<div class="header-products"></div>
             <div class="grid-container">
                 <?php
+
                  foreach ($productList as $product){
                     include 'template\ProductCard.php';
                  }

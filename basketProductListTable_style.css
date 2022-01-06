@@ -30,8 +30,14 @@ img
   text-align: left;
 }
 
+:roor
+{
+	
+}
+
 body
 {
+	
 	background: #159957;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #155799, #159957);
 	background: -o-linear-gradient(left, #155799, #159957);
@@ -47,6 +53,7 @@ body
 	min-height: 100vh;
 	height: auto;
 	padding: 0 0;
+
 	
 }
 

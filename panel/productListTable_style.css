@@ -1,35 +1,5 @@
-@font-face {
-  font-family: Shabnam-Bold;
-  src: url(fonts/Shabnam\ Bold.ttf);
-}
-
-@font-face {
-  font-family: Shabnam-light;
-  src: url(fonts/Shabnam\ Light.ttf);
-}
-
-@font-face {
-  font-family: iran-light;
-  src: url('../fonts/IRANSansWeb\(FaNum\)_Light.ttf');
-}
-
-@font-face
-{
-  font-family: iran-normal;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Medium.ttf');
-}
-
-@font-face
-{
-  font-family: iran-bold;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Bold.ttf');
-}
-
-@font-face
-{
-  font-family: iran-black;
-  src: url('fonts/IRANSansWeb\(FaNum\)_Black.ttf');
-}
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("../fonts/fonts.css");
 
 *
 {
@@ -57,109 +27,157 @@ a
 
 :root
 {
-  background-color: #444 !important;
+	font-size: calc(1em + 1vw) ;
+}
+
+body
+{
+	background: #ececec;
 }
 
 .container
 {
-  width: 100%;
+  width: 1100px;
+	margin: 0 auto;
   height: auto;
-  background-image:url(assets/images/upload/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+	padding-bottom: 20px;
+	background: #fff;
 }
 
-.body-titr
+.container img
 {
-  width: 100%;
-  height: auto;
-  padding: 20px 0;
-  /* background-color: rgba(255, 255, 255, .3); */
+	width: 100%;
+	height: auto;
 }
 
-.body-titr h1
-{
-  text-align: center;
-  width: 50%;
-  height: auto;
-  padding: 20px 10px;
-  margin: 0 auto;
-  border-radius: 4rem;
-  background-color: rgba(0, 0, 0, .6);
-  font-family: iran-bold;
-  color: #ffffff;
-  font-size: 1.8em;
-}
-
-.container-product
-{
-  padding: 50px;
-  background-color: rgba(255, 255, 255, .58);
-  margin: 10px;
-  border-radius: 1em;
-}
 
 .grid-container
 {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 8px;
-  background-color: transparent;
+	display: grid;
+	grid-template-columns: auto;
+	margin: 0 auto;
+	
 }
 
-.image_tumbnail
-{
-  max-width: 64px;
-}
 
 .datatable
 {
-  font-family: iran-light;
-  text-align: center;
-  width: 100%;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  border-collapse: collapse;;
+	font-family: iransans-light;
+	text-align: center;
+	width: 100%;
+	
 }
 
 .datatable td , .datatable th
 {
-  border-bottom: 1px solid #888;
-  padding: 8px 16px;
+	
+	border-bottom: 0px solid #888;
+	font-size: .5rem;
+	border-radius: .3em;
+	font-family: iransans-bold;
+	padding: 4px 8px;
 }
 
 table.datatable tr
 {
-  max-height: 52px;
-  background-color: #fff;
-}
-
-table.datatable tr:first-child
-{
-  max-height: 56px;
+	line-height: 1.6;
 }
 
 table.datatable tr:nth-child(even)
 {
-  background-color: silver;
+  background: #eee1ff;
+}
+table.datatable tr:nth-child(odd)
+{
+  background: #DDC4FF;
 }
 
-tr #number-product
+tr #number-user
 {
-  width: 60px;
-  border-left: 1px solid #888;
+  width: 5%;
 }
 
 tr td a
 {
-  background: #fff;
-  width: 80px;
-  margin: 0 10px;
-  padding: 10px 35px;
-  border: none;
-  font-weight: bold;
-  box-shadow: 0 0 10px 1px #777;
-  font-family: iran-light;
-  border-radius: 1em;
+	display: inline-block;
+	background: #A058FF;
+	border-radius: .3em;
+	color: #fff;
+	outline: none;
+	width: 25%;
+	padding: 8px 16px;
+	transition: .3s;
 }
+tr td a:hover
+{
+	background: #7F1EFF;
+	color: #fff;
+}
+.image_tumbnail
+{
+  max-width: 50px;
+	border-radius: .4em;
+	vertical-align: middle;
+}
+
+.container .back
+{
+	text-align: center;
+	width: 25%;
+	background: #eee1ff;
+	border-radius: .3EM;
+	margin: 10px auto;
+	font-family: iransans-bold;
+	padding: 8px 8px;
+	font-size: .6rem;
+}
+
+
+
+
+
+@media(max-width: 1120px)
+{
+	.container
+	{
+		width: 90%;
+	}
+}
+
+@media(max-width: 700px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+}
+
+
+@media(max-width: 700px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+	tr td a
+	{
+		display: block;
+		margin: 4px auto;
+		width: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

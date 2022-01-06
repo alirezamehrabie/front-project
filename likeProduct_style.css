@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("fonts/fonts.css");
+
+
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:lang(fa)
+{
+	direction: rtl;
+}
+
+:lang(en)
+{
+	direction: ltr;
+}
+
+a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+body
+{
+	font-size: calc(1em + 1vw);
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	word-spacing: -4px;
+	width: 1000px;
+	padding: 10px 0px;
+	background: #fff;
+	box-shadow: 0 0 20px #ececec;
+	margin: 20px auto;
+	font-family: iransans-light;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.container .text-up
+{
+	font-size: 1.6rem;
+	font-family: iransans-black;
+	box-shadow: 0 0 20px #fff;
+	padding: 12px 8px;
+	background: #fff;
+}
+
+.container span
+{
+	color: #DF433E;
+}
+
+
+.container .gif-like
+{
+	width: 20%;
+	vertical-align: middle;
+	margin: 0 auto;
+	height: auto;
+}
+
+.container .btn
+{
+	cursor: pointer;
+	width: 30%;
+	padding: 10px 0;
+	border-radius: .4em;
+	margin: 10px auto;
+	background: #D8F0EF;
+}
+.container .btn p
+{
+	font-size: 1rem;
+	font-family: iransans-medium;
+	color: #3DA49D;
+}
+
+
+
+
+
+
+

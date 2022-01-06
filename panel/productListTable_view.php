@@ -9,10 +9,7 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="body-titr">
-             <h1>محصولات فروشگاه</h1>
-        </div>
+		<img src="../assets/images/upload/banner/BannerProducts.png" alt="BannerProduct">
 
         <div class="container-product">
 

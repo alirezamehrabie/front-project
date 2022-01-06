@@ -19,10 +19,17 @@ class Authentication
 		return $_SESSION['uid'];
 	}
 	
+	static function productId()
+	{
+		return $_SESSION['productId'];
+	}
+	
 	static function logout()
 	{
 		unset($_SESSION['uid']);
 	}
+	
+	
 }
 
 

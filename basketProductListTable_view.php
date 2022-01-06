@@ -22,7 +22,7 @@
 		 </div>
 	
 	 <div class="container">
-		
+
 		 
 		 
 		 
@@ -41,9 +41,11 @@
                    foreach ($resultBasket as $basket)
 				   {
 					   include 'template\basketProductTableItem.php';
+					  
 				   }
                   ?>               
          
+				<a href="">تسویه حساب</a>
             </div>
         </div>
     </div>

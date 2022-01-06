@@ -43,10 +43,10 @@
 							<div class="dropdown">
 								<ul>
 									<li class="dropdown-link">
-										<a href="#">کاتالوگ محصولات</a>
+										<a href="productList_controller.php">کاتالوگ محصولات</a>
 									</li>
 									<li class="dropdown-link">
-										<a href="#">مشاهده سبد خرید</a>
+										<a href="basketProductListTable_controller.php?id=<?php echo Authentication :: uid() ?>">مشاهده سبد خرید</a>
 									</li>
 									<li class="dropdown-link">
 										<a href="#">شاخه محصولات<i class="fas fa-caret-down"></i></a>
@@ -96,7 +96,7 @@
 									</li>
 									
 									<li class="dropdown-link">
-										<a href="#">پنل کاربر | مدیر</a>
+										<a href="loginPanel_controller.php">پنل کاربر | مدیر</a>
 									</li>
 									
 									<div class="arrow"></div>
@@ -105,7 +105,7 @@
 							
 						</li>
 						<li class="nav-link" style="--i: 1.35s">
-							<a href="#">ارتباط با ما</a>
+							<a href="contact_view.php">ارتباط با ما</a>
 							
 						</li>
 					</ul>
@@ -115,8 +115,8 @@
 				
 				<div class="log-sign" style="--i: 1.8s">
 					<div class="log-sign">
-						<a href="#" class="btn transparent">ورود به پنل کاربری</a>
-						<a href="#" class="btn solid">ثبت نام  </a>
+						<a href="loginPanel_controller.php" class="btn transparent">ورود به پنل کاربری</a>
+						<a href="addUser_controller.php" class="btn solid">ثبت نام  </a>
 					</div>
 				</div>
 			</div>
@@ -320,10 +320,10 @@
 			<div class="col-footer">
 				<div class="content-footer">
 					<strong>دسترسی سریع</strong>
-					<a href="" class="link-footer-quick">ورود به پنل کاربری</a>
-					<a href="" class="link-footer-quick">ثبت نام در باشگاه مشتریان</a>
-					<a href="" class="link-footer-quick">سوالات متداول درباره محصولات</a>
-					<a href="" class="link-footer-quick">ارسال تیکت به پیشتیبانی</a>
+					<a href="loginPanel_controller.php" class="link-footer-quick">ورود به پنل کاربری</a>
+					<a href="addUser_controller.php" class="link-footer-quick">ثبت نام در باشگاه مشتریان</a>
+					<a href="#" class="link-footer-quick">سوالات متداول درباره محصولات</a>
+					<a href="contact.php" class="link-footer-quick">ارسال تیکت به پیشتیبانی</a>
 					<a href="#sec-link-contact-container" class="link-footer-quick">شبکه های اجتماعی ونوس <small>(فضای مجازی)</small></a>
 
 				</div>
@@ -372,8 +372,8 @@
     <script>
         jQuery(document).ready(function($) {
             $('.counter').counterUp({
-                delay: 20,
-                time: 3000
+                delay: 30,
+                time: 5000
             });
         });
 
